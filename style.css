@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*The box-sizing property allows us to include the padding and border in an element's total width and height.*/
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to top,black,orange);
+    background-color: black;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.leaderboard{
+    max-width: 25rem;
+    margin: 5rem auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 16px 1px #aaa;
+}
+header{
+    background-color: #ff7500;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 15rem;
+    position: relative;
+}
+table{
+    background-color: #16181E;
+    /*to touch the border fully*/
+    width: 100%;
+    color: #999;
+    /*by default table tries to add line separator.
+    With border-collapse we collapse them.;*/
+    border-collapse: collapse;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 3rem;
+    position: absolute;
+    top: 4rem;
+    margin-left: 3rem;
+}
+img{
+    height: 20rem;
+    position: absolute;
+    bottom: 0;
+    left: 8.9rem;
+}
+nav{
+    position: absolute;
+    bottom: 0;
+    font-size: 0.9rem;
+}
+nav a:first-child{
+    margin-left: 3rem;
+}
+nav a{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: inline-block;
+    font-weight: bold;
+}
+a.active{
+    border-bottom: 4px solid yellow;
+}
+thead{
+    font-size: 0.75rem;
+    color: #555;
+}
+tbody .name{
+    font-weight: bold;
+    color: white;
+}
+.name{
+    text-align: left;
+}
+.rank,.sp.kd{
+    text-align: right;
+}
+.sp,.kd{
+    width: 8ch;
+}
+
+.rank{
+    width: 4ch;
+}
+/*spacing between each row*/
+td{
+    /*0.5 vertical padding and 1rem horizontal padding*/
+    padding: 1rem 1rem;
+}
+th{
+    padding: 1rem 1rem;
+}
+/*every even row gets a differnet background*/
+tbody tr:nth-child(2n){
+    background-color:#1f232c ;
+}
+/*WORKING WITH NAVIGATING LIN*/
+nav a{
+     font-size: 0.9rem;
+}
+
+/*between every link there should be a 1rem space*/
+nav a+a{
+    margin-left: 1rem;
+}
